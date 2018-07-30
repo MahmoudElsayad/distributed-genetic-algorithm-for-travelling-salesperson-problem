@@ -1,0 +1,310 @@
+* {
+  margin:0;
+  z-index: 20;
+}
+
+body{
+  background-color:
+}
+
+header {
+  background-color: #fff;
+}
+
+.section{
+  height: 100vh;
+
+}
+
+#graph {
+  margin: 0 25% ;
+  width:100%;
+  height:100vh;
+}
+
+.image {
+  /* The image used */
+background-image: url("..//nasa.jpg");
+
+/* Center and scale the image nicely */
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 0;
+}
+
+#stats {
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 1% 1% 1% 5%;
+    background-color: #9575cd;
+    z-index: 2;
+    text-align: center;
+}
+
+#stats p {
+  letter-spacing: 0.5px;
+  margin-top: -3px;
+  color: #ede7f6;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 1%;
+
+}
+
+#nav p {
+  letter-spacing: 0.5px;
+  margin-top: -3px;
+  color: #ede7f6;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 1%;
+
+}
+
+button {
+
+    background-color: #fff;
+    border: none;
+    padding: 0.25% 0.5%;
+    margin-right: 17px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    cursor:pointer;
+
+}
+
+button:hover {
+    background-color: #1b1b1b;
+    color: #9575cd;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+#notification {
+  background-color: #fff;
+  width: 40%;
+  height: 3vh;
+  position: absolute;
+  top: 75%;
+  color: #1b1b1b;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#notification p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  transition-duration: 1s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#setupNotification {
+  background-color: #fff;
+  width: 40%;
+  height: 3vh;
+  position: absolute;
+  top: 70%;
+  color: #1b1b1b;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#setupNotification p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  transition-duration: 1s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.slide {
+  background-color: #1b1b1b;
+}
+
+canvas {
+  transform: scale(1);
+  position: absolute;
+  left: 41%%;
+  top: 24%;
+  transition-duration: 1s;
+}
+
+
+#draw {
+  height:500px;
+  width: 500px;
+  background-color: grey;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+#graph h2{
+    position: relative;
+    left: -20%;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#graph h3{
+    position: relative;
+    left: -19%;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    transition-duration: 1s;
+    letter-spacing: 2px;
+}
+
+
+.mainText {
+
+    position: relative;
+    top: -14%;
+    left: 9%;
+
+}
+
+.mainText h1 {
+    color: white;
+    letter-spacing: 7px;
+    margin-bottom: 3%;
+}
+
+.mainText h3 {
+
+    margin-bottom: 2%;
+    margin-left: 3%;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.mainText li {
+    list-style: none;
+    margin: 1%;
+}
+
+.mainText a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+    letter-spacing: 2px;
+    transition-duration: : 1s;
+    padding: 2px;
+}
+
+.mainText a:hover {
+    color: #1b1b1b;
+    background-color: white;
+    transition-duration: 1s;
+}
+
+.snip1544 {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0px 40px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  line-height: 2.7em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+  border: 3px solid #fff;
+  background-color: transparent;
+  border-radius: 0 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.snip1544:before {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 35px 35px;
+  border-color: transparent transparent #9575cd transparent;
+  z-index: 1;
+}
+
+.snip1544:hover,
+.snip1544.hover {
+  border-color: #9575cd;
+}
+
+/**************** MEDIA QUERIES ***********************/
+
+@media only screen and (max-width: 700px) {
+  canvas {
+    transform: scale(0.5);
+    left: -12%;
+    transition-duration: 1s;
+
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  canvas {
+    transform: scale(0.5);
+left: -27%;
+top: 15%;
+transition-duration: 1s;
+
+  }
+}
+
+@media only screen and (max-width:430px){
+  canvas {
+    transform: scale(0.4);
+    left: -43%;
+    top: 15%;
+    transition-duration: 1s;
+
+}
+}
+
+@media only screen and (max-width:360px){
+  canvas {
+    transform: scale(0.3);
+    left: -53%;
+    top: 3%;
+    transition-duration: 1s;
+
+}
+}
+
+}
